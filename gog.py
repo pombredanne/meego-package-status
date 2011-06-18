@@ -131,7 +131,7 @@ class Package:
         return self.versions[-1]
 
 obs_template = "http://download.meego.com/live/%s/Trunk"
-obs_trunk    = "http://download.meego.com/snapshots/latest/repos/oss/source"
+obs_trunk    = "http://download.meego.com/snapshots/latest-testing/repos/oss/source"
 
 class OBSRepository:
     def __init__(self, project):

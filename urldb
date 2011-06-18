@@ -15,6 +15,9 @@ PyQuante DEFAULT SF-DEFAULT:pyquante
 PyQwt DEFAULT SF-DEFAULT:pyqwt
 RackTables DEFAULT SF-DEFAULT:racktables
 ReviewBoard DEFAULT http://downloads.reviewboard.org/releases/ReviewBoard/*/
+SDL DEFAULT http://www.libsdl.org/release/
+SDL_Pango DEFAULT SF-DEFAULT:sdlpango
+SOAPpy DEFAULT SF-DEFAULT:pywebsvcs
 TeXmacs TeXmacs-(.*?)-src\.tar ftp://ftp.texmacs.org/pub/TeXmacs/targz/
 TurboGears2 DEFAULT http://www.turbogears.org/2.1/downloads/current/
 UpTools DEFAULT http://www.palermo.edu/ingenieria/uptools_ingles.html
@@ -129,16 +132,19 @@ atk DEFAULT GNOME-DEFAULT
 atlascpp DEFAULT:Atlas-C++ SF-DEFAULT:worldforge
 attr DEFAULT http://download.savannah.gnu.org/releases-noredirect/attr/
 audacious DEFAULT http://audacious-media-player.org/downloads
+audiofile DEFAULT GNOME-DEFAULT
 augeas DEFAULT http://augeas.net/download/
 auto-nng auto-nng.v(.*?).tar.gz http://www.auto-nng.org/files/downloads/
 autoconf DEFAULT GNU-DEFAULT
 autogen DEFAULT GNU-DEFAULT
 automake DEFAULT GNU-DEFAULT
 autossh autossh-(.+?)\.t.*z http://www.harding.motd.ca/autossh/
+autotrace DEFAULT SF-DEFAULT
 avahi DEFAULT http://avahi.org/download/
 avogadro DEFAULT SF-DEFAULT
 awstats awstats-(.*?).tar.gz http://sourceforge.net/project/showfiles.php?group_id=13764&package_id=11481
 babel DEFAULT:Babel http://ftp.edgewall.com/pub/babel/
+babl DEFAULT http://ftp.gimp.org/pub/babl/*/
 backintime backintime-([0-9.]+)_src.tar.gz http://backintime.le-web.org/download_page/
 barcode DEFAULT GNU-DEFAULT
 bash DEFAULT GNU-DEFAULT
@@ -152,6 +158,7 @@ binutils binutils-(.*?\.0\.[0-9.]*?)\.tar\. http://www.kernel.org/pub/linux/deve
 bison DEFAULT GNU-DEFAULT
 bitbake DEFAULT http://download.berlios.de/bitbake/
 bitstream-vera-fonts DEFAULT:ttf-bitstream-vera GNOME-DEFAULT:ttf-bitstream-vera
+bitmap DEFAULT http://xorg.freedesktop.org/releases/individual/app/
 blackbox DEFAULT SF-DEFAULT:blackboxwm
 blazeblogger DEFAULT http://blaze.blackened.cz/downloads/
 bleachbit DEFAULT http://bleachbit-project.appspot.com/download/source/
@@ -162,6 +169,7 @@ blobwars \bblobwars-([\d.]+)(?:-dfsg)?\.t SF-DEFAULT
 bluetile HACKAGE-DEFAULT HACKAGE-DEFAULT
 bluez DEFAULT http://www.kernel.org/pub/linux/bluetooth/
 bodr DEFAULT SF-DEFAULT
+boost DEFAULT SF-DEFAULT:boost
 boswars DEFAULT http://www.boswars.org/dist/releases/
 bouml bouml_(.*?).tar.gz http://bouml.free.fr/download.html
 bouml-doc doc(.*?).tar.gz http://bouml.free.fr/documentation.html
@@ -169,6 +177,7 @@ bouncycastle (?i)Java\s+Release\s+([\d.]+) http://www.bouncycastle.org/
 bridge-utils DEFAULT SF-DEFAULT:bridge
 bti bti-(.*?).tar.bz2 http://www.kernel.org/pub/linux/kernel/people/gregkh/bti/
 btrfs-progs btrfs-progs-(.*?).tar.bz2 http://www.kernel.org/pub/linux/kernel/people/mason/btrfs/
+bugle DEFAULT SF-DEFAULT
 busybox DEFAULT http://www.busybox.net/downloads/
 byacc DEFAULT ftp://invisible-island.net/byacc/
 bygfoot DEFAULT SF-DEFAULT
@@ -176,11 +185,13 @@ byobu DEFAULT LP-DEFAULT
 bzip2 DEFAULT http://www.bzip.org/downloads.html
 bzr DEFAULT LP-DEFAULT
 bzrtools bzrtools-(.*?).tar.gz http://bazaar-vcs.org/BzrTools
+c-ares DEFAULT http://c-ares.haxx.se/
 c2050 c2050-(.*?).tar.gz http://www.prato.linux.it/~mnencia/lexmark2050/files/
 cabextract DEFAULT http://www.cabextract.org.uk/
 cairo DEFAULT http://cairographics.org/releases/
 calc DEFAULT GNU-DEFAULT
 cardpeek DEFAULT GOOGLE-DEFAULT
+catdoc DEFAULT http://www.wagner.pp.ru/~vitus/software/catdoc/
 ccache DEFAULT http://samba.org/ftp/ccache/
 ccrtp DEFAULT GNU-DEFAULT
 cd-discid DEFAULT http://linukz.org/cd-discid.shtml
@@ -203,7 +214,7 @@ cifs-utils DEFAULT ftp://ftp.samba.org/pub/linux-cifs/cifs-utils/
 clisp DEFAULT http://ftp.gnu.org/gnu/clisp/latest/
 cloog DEFAULT http://www.bastoul.net/cloog/download.php
 clutter DEFAULT http://source.clutter-project.org/sources/clutter/*/
-clutter-gst DEFAULT GNOME-DEFAULT
+clutter-gst DEFAULT http://source.clutter-project.org/sources/clutter-gst/*/
 clutter-gtk DEFAULT GNOME-DEFAULT
 cmake DEFAULT http://www.cmake.org/cmake/resources/software.html
 cmospwd cmospwd-([0-9\.]*?).tar.bz2 http://www.cgsecurity.org/wiki/CmosPwd
@@ -212,6 +223,7 @@ coda DEFAULT http://www.coda.cs.cmu.edu/pub/coda/src/
 colordiff DEFAULT http://colordiff.sourceforge.net/
 compiz DEFAULT:compiz-core http://releases.compiz.org/*/
 conduit DEFAULT GNOME-DEFAULT
+connman DEFAULT http://www.kernel.org/pub/linux/network/connman/
 conntrack-tools DEFAULT http://ftp.netfilter.org/pub/conntrack-tools/
 coreutils DEFAULT GNU-DEFAULT
 corkscrew corkscrew-(.*?).tar.gz http://www.agroman.net/corkscrew/
@@ -222,14 +234,17 @@ cpl DEFAULT ftp://ftp.eso.org/pub/cpl/
 cppcheck DEFAULT SF-DEFAULT
 cpphs HACKAGE-DEFAULT HACKAGE-DEFAULT
 cppi DEFAULT GNU-DEFAULT
+cppunit DEFAULT SF-DEFAULT
 cproto DEFAULT ftp://invisible-island.net/cproto/
 cracklib DEFAULT SF-DEFAULT
+createrepo DEFAULT http://createrepo.baseurl.org/download/
 crda DEFAULT http://wireless.kernel.org/download/crda/
 crm114 crm114-(.*?)-Blame.*?.tar.gz http://crm114.sourceforge.net/tarballs/
 crossvc crossvc-(.*?)\-generic-src\.tgz http://crossvc.com/index.php?menu_id=5&lang=en
 cscope DEFAULT SF-DEFAULT
 cssed DEFAULT SF-DEFAULT
 cstream cstream-([0-9\.]+)\.tar\.gz http://www.cons.org/cracauer/download/
+ctags DEFAULT SF-DEFAULT
 ctorrent ctorrent-dnh(.*?).tar.gz http://www.rahul.net/dholmes/ctorrent/
 cups cups-(\d\.\d\.\d)-source\.tar\.bz2 http://www.cups.org/software.php
 curl DEFAULT http://curl.haxx.se/download/
@@ -237,12 +252,15 @@ cvs >(\d+(?:\.\d+)+)/< http://ftp.gnu.org/non-gnu/cvs/source/stable/
 cvs2cl Revision:\s*([^\s$]+) http://www.red-bean.com/cvs2cl/cvs2cl.pl
 cvsps DEFAULT http://www.cobite.com/cvsps/
 cyphesis DEFAULT SF-DEFAULT:worldforge
+d-feet DEFAULT GNOME-DEFAULT
 darcs HACKAGE-DEFAULT HACKAGE-DEFAULT
 darktable DEFAULT SF-DEFAULT
 db4 "DB (4[0-9.]*).tar.gz<" http://www.oracle.com/technetwork/database/berkeleydb/downloads/index-082944.html
 dbench dbench-(.*?)\.tar http://samba.org/ftp/tridge/dbench/
 dblatex DEFAULT SF-DEFAULT
+dbus DEFAULT http://dbus.freedesktop.org/releases/dbus/
 dbus-glib DEFAULT http://dbus.freedesktop.org/releases/dbus-glib/
+dbus-python DEFAULT http://dbus.freedesktop.org/releases/dbus-python/
 dclib DEFAULT SF-DEFAULT:wxdcgui
 dconf DEFAULT GNOME-DEFAULT
 dcraw DEFAULT http://www.cybercom.net/~dcoffin/dcraw/archive/
@@ -259,6 +277,7 @@ deluge DEFAULT http://download.deluge-torrent.org/source/
 denemo DEFAULT GNU-DEFAULT
 desktop-file-utils DEFAULT http://www.freedesktop.org/software/desktop-file-utils/releases/
 detox DEFAULT SF-DEFAULT
+dev86 DEFAULT http://homepage.ntlworld.com/robert.debath/
 devhelp DEFAULT GNOME-DEFAULT
 device-mapper-multipath multipath-tools-(.*?)\.tar\.bz2 http://christophe.varoqui.free.fr/multipath-tools/
 dexter DEFAULT LP-DEFAULT:dexter-rolodex
@@ -270,6 +289,7 @@ diffutils DEFAULT GNU-DEFAULT
 digikam DEFAULT SF-DEFAULT
 directfb DEFAULT:DirectFB http://www.directfb.org/index.php?path=Main/Downloads
 dirmngr DEFAULT ftp://ftp.gnupg.org/gcrypt/dirmngr/
+distcc DEFAULT GOOGLE-DEFAULT
 dkms DEFAULT http://linux.dell.com/dkms/
 dmenu DEFAULT http://tools.suckless.org/dmenu/
 dmidecode DEFAULT http://download.savannah.gnu.org/releases/dmidecode/
@@ -982,6 +1002,7 @@ osmo DEFAULT SF-DEFAULT:osmo-pim
 osslsigncode DEFAULT SF-DEFAULT
 ovaldi DEFAULT SF-DEFAULT
 p7zip p7zip_([0-9.]*?)_src_all.tar.bz2 SF-DEFAULT
+pacrunner DEFAULT http://www.kernel.org/pub/linux/network/connman/
 pal DEFAULT SF-DEFAULT:palcal
 pam DEFAULT http://www.us.kernel.org/pub/linux/libs/pam/library/
 pam_mount DEFAULT SF-DEFAULT:pam-mount
