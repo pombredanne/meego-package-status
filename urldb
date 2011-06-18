@@ -371,6 +371,7 @@ f-spot DEFAULT GNOME-DEFAULT
 fatrat fatrat-(.*?).tar.gz http://www.dolezel.info/download/data/fatrat/
 fbreader fbreader-sources-(.*?).tgz http://fbreader.org/downloads.php
 fdupes fdupes-(.*?).tar.gz http://netdial.caribe.net/~adrian2/programs/
+festival DEFAULT http://festvox.org/packed/festival/2.1/
 fetchlog DEFAULT SF-DEFAULT
 fetchmail DEFAULT http://download.berlios.de/fetchmail/
 ffsb DEFAULT SF-DEFAULT
@@ -511,6 +512,7 @@ glib-networking DEFAULT GNOME-DEFAULT
 glib2 DEFAULT GNOME-DEFAULT
 glibc DEFAULT GNU-DEFAULT
 glpk glpk-([0-9]+\..+?).tar.gz GNU-DEFAULT
+glew DEFAULT SF-DEFAULT
 gmediaserver gmediaserver-(.*?).tar.gz http://download.savannah.gnu.org/releases/gmediaserver/
 gmime DEFAULT GNOME-DEFAULT
 gmp gmp-(4\..*?)\.tar\.bz2 GNU-DEFAULT:gmp
@@ -581,6 +583,7 @@ gpscorrelate DEFAULT http://www.freefoote.com/linux_gpscorr.html
 gquilt DEFAULT SF-DEFAULT
 graphviz stable/SOURCES/graphviz-([0-9.]*?)\.tar http://www.graphviz.org/Download_source.php
 grep DEFAULT GNU-DEFAULT
+grilo DEFAULT GNOME-DEFAULT
 groff DEFAULT GNU-DEFAULT
 gromacs DEFAULT ftp://ftp.gromacs.org/pub/gromacs/
 groonga DEFAULT http://packages.groonga.org/source/groonga/
@@ -590,7 +593,13 @@ gscan2pdf DEFAULT SF-DEFAULT
 gsettings-desktop-schemas DEFAULT GNOME-DEFAULT
 gsl DEFAULT GNU-DEFAULT
 gssdp DEFAULT GNOME-DEFAULT
+gst-dsp DEFAULT GOOGLE-DEFAULT
+gst-plugins-base DEFAULT http://gstreamer.freedesktop.org/src/gst-plugins-base/
+gst-plugins-good DEFAULT http://gstreamer.freedesktop.org/src/gst-plugins-good
+gst-plugins-bad-free DEFAULT:gst-plugins-bad http://gstreamer.freedesktop.org/src/gst-plugins-bad
+gnonlin DEFAULT http://gstreamer.freedesktop.org/src/gnonlin/
 gstreamer DEFAULT http://gstreamer.freedesktop.org/src/gstreamer/
+
 gstreamer-rtsp DEFAULT http://cgit.freedesktop.org/gstreamer/gst-rtsp-server/
 gthumb DEFAULT GNOME-DEFAULT
 gtk-doc DEFAULT GNOME-DEFAULT
@@ -847,6 +856,7 @@ libxdg-basedir libxdg-basedir-([0-9\.]+)\.tar\.gz http://n.ethz.ch/~nevillm/down
 libxkbfile DEFAULT http://xorg.freedesktop.org/archive/individual/lib/
 libxklavier DEFAULT GNOME-DEFAULT
 libxml2 DEFAULT ftp://xmlsoft.org/libxml2/
+libxml2-python DEFAULT:libxml2 ftp://xmlsoft.org/libxml2/
 libyubikey DEFAULT GOOGLE-DEFAULT:yubico-c
 lightning DEFAULT GNU-DEFAULT
 lighttpd DEFAULT http://download.lighttpd.net/lighttpd/releases-1.4.x/
@@ -1551,6 +1561,7 @@ qwt DEFAULT SF-DEFAULT
 radvd DEFAULT http://www.litech.org/radvd/
 rakarrack rakarrack-(.[^-]*?).tar.(?:bz2|gz) SF-DEFAULT
 rapidsvn "<a href=""([0-9.]+)/"">" http://www.rapidsvn.org/download/release/
+rarian DEFAULT http://rarian.freedesktop.org/Releases/
 rb_libtorrent DEFAULT:libtorrent-rasterbar GOOGLE-DEFAULT:libtorrent
 rcs DEFAULT GNU-DEFAULT
 rcsslogplayer "\""([0-9]+?\.[0-9.]+?)\""" http://sourceforge.net/projects/sserver/files/rcsslogplayer/
@@ -1864,6 +1875,7 @@ xbacklight DEFAULT http://xorg.freedesktop.org/releases/individual/app/
 xbean ([0-9]\.[0-9.]+)/ http://repo2.maven.org/maven2/org/apache/xbean/xbean/
 xboard DEFAULT GNU-DEFAULT
 xcb-util DEFAULT http://xcb.freedesktop.org/dist/
+xcb-proto DEFAULT http://xcb.freedesktop.org/dist/
 xchat "Source: (.*?)</a>" http://www.xchat.org/
 xchm DEFAULT SF-DEFAULT
 xcompmgr DEFAULT http://xorg.freedesktop.org/archive/individual/app/
@@ -1967,11 +1979,13 @@ xorg-x11-proto-xf86miscproto xf86miscproto-(.*?)\.tar\.bz2 http://xorg.freedeskt
 xorg-x11-proto-xf86rushproto xf86rushproto-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/proto/
 xorg-x11-proto-xf86vidmodeproto xf86vidmodeproto-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/proto/
 xorg-x11-proto-xineramaproto xineramaproto-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/proto/
+xorg-x11-proto-xf86driproto xf86driproto-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/proto/
 xorg-x11-proto-xproto xproto-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/proto/
 xorg-x11-proto-xproxymanagementprotocol xproxymanagementprotocol-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/proto/
 xorg-x11-server xorg-server-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/xserver/
 xorg-x11-twm twm-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/app/
 xorg-x11-util-macros util-macros-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/util/
+xorg-x11-utils-rgb rgb-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/app/
 xorg-x11-utils-sessreg sessreg-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/app/
 xorg-x11-utils-xcmsdb xcmsdb-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/app/
 xorg-x11-utils-xdpyinfo xdpyinfo-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/app/
@@ -1995,6 +2009,7 @@ xorg-x11-utils-xset xset-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/ind
 xorg-x11-utils-xsetroot xsetroot-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/app/
 xorg-x11-utils-xvinfo xvinfo-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/app/
 xorg-x11-utils-xwininfo xwininfo-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/app/
+xorg-x11-utils-iceauth iceauth-(.*?)\.tar\.bz2 ftp://ftp.x.org/pub/individual/app
 xorg-x11-xauth xauth-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/app
 xorg-x11-xbitmaps xbitmaps-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/data
 xorg-x11-xdm xdm-(.*?)\.tar\.bz2 http://xorg.freedesktop.org/archive/individual/app/
