@@ -156,8 +156,12 @@ class OBSRepository:
         return "%s/repodata/repomd.xml" % self.url
 
     def parse_repo_data(self):
-        f = Fetcher()
+        # Simple, yet effective caching... 
+        if os.path.exists("./primary.xml.gz"):
+            self.parse_packages("primary.xml.gz")
+            return
 
+        f = Fetcher()
         url = self.get_repomd_path()
         md = f.get(url)
         tree = etree.ElementTree()
@@ -172,15 +176,18 @@ class OBSRepository:
                 local = open("primary.xml.gz", "w")
                 local.write(fpgz.read())
                 local.close()
-                root = etree.parse("primary.xml.gz")
-                ns2 = "http://linux.duke.edu/metadata/common"
-                for s in root.findall('{%s}package' % ns2):
-                    arch = s.find('{%s}arch' % ns2).text
-                    if arch == 'src':
-                        name = s.find('{%s}name' % ns2)
-                        version = s.find('{%s}version' % ns2)
-                        ver = version.attrib.get("ver")
-                        self.packages[name.text] = ver
+                self.parse_packages("primary.xml.gz")
+
+    def parse_packages(self, file):
+        root = etree.parse(file)
+        ns2 = "http://linux.duke.edu/metadata/common"
+        for s in root.findall('{%s}package' % ns2):
+            arch = s.find('{%s}arch' % ns2).text
+            if arch == 'src':
+                name = s.find('{%s}name' % ns2)
+                version = s.find('{%s}version' % ns2)
+                ver = version.attrib.get("ver")
+                self.packages[name.text] = ver
 
 class PackageSource:
     # These variables are shared between all the instances of PackageSource
@@ -489,7 +496,7 @@ class Dispatcher:
 
     def get_upstream_version(self, obs_name):
         if not Dispatcher.urldb.has_key (obs_name):
-            return 'Not Found'
+            return 'Not in db'
 
         entry = Dispatcher.urldb[obs_name]
         tags = entry[2]
